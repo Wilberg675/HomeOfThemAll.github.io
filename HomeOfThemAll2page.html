@@ -13,7 +13,9 @@
 }
 
 .topnav a {
-  float: left;
+   float:left;
+	position: relative;
+	left:350px; 
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -47,6 +49,95 @@
 		margin-bottom: 50px;
 	
 	}
+		.title{
+			background-color:rgba(0,0,0, 0.5);
+			border:outset;
+			border-color:black;
+			border-with:2px;
+			margin-top:50px;
+			width:85%;
+			
+		}
+		.main_text{
+		color:white;
+		 font-family: "Times New Roman", Times, serif;
+		margin-left: 30px;
+			 margin-right:30px;
+	}
+		.pic{
+			margin:50px;
+			border:outset;
+			border-color:black;
+			position: relative;
+			width:75%;
+		}
+		
+		.container {
+  position: relative;
+  width: 25%;
+}
+		.container2 {
+  position: relative;
+			bottom:305px;
+			left:360px;
+  width: 25%;
+}
+.container3 {
+  position: relative;
+	bottom:604px;
+	left:720px;
+  width: 25%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.overlay1 {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container2:hover .overlay1 {
+  opacity: 1;
+}
+		.container3:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 	
 	</style>
 	
@@ -56,21 +147,58 @@
 	
 	
 	<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="#news">Reptiles</a>
-  <a href="#contact">Mammals</a>
-  <a href="#about">Fish</a>
-</div>
+	  <p><a  href="#home">Home</a> 
+		  <a class="active" href="#news">Reptiles</a> 
+		  <a href="https://wilberg675.github.io/HomeOfThemAll.github.io/HomeOfThemAll3page">Mammals</a> 
+		  <a href="#about">Fish</a>
+		<a href="#feeder"> Feeders</a>
+		</p>
+	  <p>&nbsp;</p>
+	</div>
 
 <div style="padding-left:16px">
   
 </div>
 	
-	
 	<center>
-	<img class="main_pic" src="Homepage.jpg">
-		</center>
+	<div class="title">
+	<center>
 	
+		<h1 class="main_text"> Reptiles</h1>
+		
+		</center>
+	</div>
+	</center>
+	
+	<div class="container">
+	<a href="">
+		<img class="pic" src="pics/bermanja_panther_chameleon_4-510x510.jpg"  >
+	 <div class="overlay">
+    <div class="text">animal $TBD</div>
+		</a> 
+	</div>
+		</div>
+	<div class="container2">
+		<a>
+		<img class="pic" src="pics/ug_giant_leaf_tail_gecko_2-510x510.jpg.webp" >
+			<div class="overlay1">
+			<div class="text"> animal2 $TBD</div>
+			
+			</div>
+		</a>
+		
+		 
+	</div>
+	
+	<div class="container3">
+	<a href="">
+		
+		<img class="pic" src="pics/ug_spekes_hindgeback_tortoise_2-510x510.jpg.webp">
+		<div class="overlay">
+			<div class="text"> animal3 $TBD</div>
+		</div>
+	</a>
+		</div>
 	
 </body>
 </html>
