@@ -74,19 +74,17 @@
 		
 		.container {
   position: relative;
-  width: 25%;
+  width: 100%;
 }
 		.container2 {
   position: relative;
-			bottom:305px;
-			left:360px;
-			width:25%;
+			
+			width:100%;
 }
 .container3 {
   position: relative;
-	bottom:604px;
-	left:720px;
-  width: 25%;
+	
+  width: 100%;
 }
 .image {
   display: block;
@@ -150,6 +148,19 @@
 		border-color:black;
 	margin:60px;
 	}
+		.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+		
 	</style>
 	
 </head>
@@ -181,6 +192,8 @@
 	</div>
 	</center>
 	
+	<div class="row">
+		<div class="column">
 	<div class="container">
 	<a href="">
 		<img class="pic" src="pics/bermanja_panther_chameleon_4-510x510.jpg"  >
@@ -189,6 +202,8 @@
 		</a> 
 	</div>
 		</div>
+			
+			<div class="column">
 	<div class="container2">
 		<a>
 		<img class="pic" src="pics/ug_giant_leaf_tail_gecko_2-510x510.jpg.webp" >
@@ -197,10 +212,11 @@
 			
 			</div>
 		</a>
-		
+				</div>
 		 
 	</div>
 	
+			<div class="column">
 	<div class="container3">
 	<a href="">
 		
@@ -210,6 +226,9 @@
 		</div>
 	</a>
 		</div>
+	</div>
+		</div>
+	</div>
 	<center>
 	
 	<footer>
